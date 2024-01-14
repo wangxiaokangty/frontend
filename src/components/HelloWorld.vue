@@ -14,6 +14,18 @@
     </ul>
     <h3>Essential1 Links</h3>
 
+
+    <!-- 小康用于的 element-ui 的测试-->
+    <el-row class="mb-4">
+      <el-button>Default</el-button>
+      <el-button type="primary">Primary</el-button>
+      <el-button type="success">Success</el-button>
+      <el-button type="info">Info</el-button>
+      <el-button type="warning">Warning</el-button>
+      <el-button type="danger">Danger</el-button>
+    </el-row>
+
+
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
