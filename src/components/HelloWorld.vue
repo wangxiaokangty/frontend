@@ -28,10 +28,9 @@ export default {
   props: {
     msg: String
   },
-
   methods: {
     fetchdata() {
-      axios.get("http://localhost:8080/findById?id=1").then(res => {
+      this.$axios.get("http://localhost:8080/findById?id=1").then(res => {
         alert(res.data.id),
             this.message = res.data.id
       })
