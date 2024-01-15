@@ -12,12 +12,12 @@
       <el-button type="danger" @click="fetchdata()">Danger</el-button>
     </el-row>
 
+    <!-- 这是小康用来测试将返回的数据给数据模型赋值-->
+    <span> xiaokang {{ message }}</span>
 
 
   </div>
 </template>
-
-
 
 
 <script>
@@ -28,13 +28,20 @@ export default {
   props: {
     msg: String
   },
-  methods:{
-    fetchdata(){
-      axios.get("http://localhost:8080/findById?id=1").then(res=>{
-        alert(res.data)
+
+  methods: {
+    fetchdata() {
+      axios.get("http://localhost:8080/findById?id=1").then(res => {
+        alert(res.data.id),
+            this.message = res.data.id
       })
     }
-  }
+  },
+  data() {
+    return {
+      message: "这是初始消息"
+    };
+  },
 
 }
 </script>

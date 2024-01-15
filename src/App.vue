@@ -1,7 +1,11 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/login">login</router-link> |
+    <router-link to="/Blogs">Blogs</router-link> |
+    <router-link to="/BlogEdit">BlogEdit</router-link> |
+    <router-link to="/BlogDetail">BlogDetail</router-link>
   </nav>
   <router-view/>
 </template>
@@ -28,3 +32,8 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script setup>
+import Login from "@/views/Login.vue";
+import Blogs from "@/views/Blogs.vue";
+import BlogDetail from "@/views/BlogDetail.vue";
+</script>
