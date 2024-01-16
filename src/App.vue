@@ -33,7 +33,4 @@ nav a.router-link-exact-active {
 }
 </style>
 <script setup>
-import Login from "@/views/Login.vue";
-import Blogs from "@/views/Blogs.vue";
-import BlogDetail from "@/views/BlogDetail.vue";
 </script>

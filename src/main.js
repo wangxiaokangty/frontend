@@ -7,6 +7,7 @@ import 'element-plus/dist/index.css'
 import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 import axios from "axios";
+import './axios'
 
 
 const app = createApp(App)
